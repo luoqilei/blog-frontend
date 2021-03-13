@@ -70,9 +70,22 @@ export default {
   },
   computed: {
     journal() {
-      return this.$page.allStrapiLatest.edges.find(
-        (item) => item.node.id === this.$route.params.id
-      )?.node
+      return (
+        this.$page.allStrapiLatest.edges.find(
+          (item) => item.node.id === this.$route.params.id
+        )?.node || {
+          id: "1",
+          title: "2",
+          subTitle: "3",
+          content: "4",
+          created_at: 1423213123123,
+          author: "",
+          time: "",
+          img: {
+            url: "1.png",
+          },
+        }
+      )
     },
     time() {
       return moment(this.journal.created_at).format("DD.MMM YYYY")
