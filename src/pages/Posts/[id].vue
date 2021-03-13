@@ -45,7 +45,6 @@
                 title
                 subTitle
                 content
-                path
                 created_at
                 categories {
                     id
