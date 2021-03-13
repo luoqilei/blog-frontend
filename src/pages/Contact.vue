@@ -43,6 +43,9 @@
 import axios from "axios"
 export default {
   name: "Contact",
+  metaInfo: {
+    title: "Contact",
+  },
   data() {
     return {
       contactInfo: {
