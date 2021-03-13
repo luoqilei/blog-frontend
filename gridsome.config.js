@@ -22,12 +22,4 @@ module.exports = {
     },
   ],
   port: 3000,
-  templates: {
-    StrapiPost: [
-      {
-        path: "/posts/:id",
-        component: "./src/templates/Post.vue",
-      },
-    ],
-  },
 }
