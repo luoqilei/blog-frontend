@@ -64,10 +64,8 @@ import Markdown from "markdown-it"
 const md = new Markdown()
 export default {
   name: "Post",
-  metaInfo() {
-    return {
-      title: this.post.title,
-    }
+  metaInfo: {
+    title: "Journal",
   },
   computed: {
     post() {
