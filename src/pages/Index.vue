@@ -41,7 +41,6 @@
           title
           subTitle
           content
-          path
           categories {
             id
             title
